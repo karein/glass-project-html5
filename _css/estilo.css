@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face {
+  font-family: 'fonteelogo';
+  src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+  background-color: #ddd;
+  color: rgba(0, 0, 0, 1);
+}
+
+#interface{
+  width: 900px;
+  background-color: #fff;
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  padding: 10px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+#iconeOculos{
+  position: absolute;
+  left: 952px ;
+  top: 70px ;
+}
+
+#cabecalho{
+  border-bottom: 1px #606060 solid;
+  height: 150px;
+  background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+#cabecalho h1{
+  font-family: 'fonteelogo', sans-serif;
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  padding: 0px;
+  margin-bottom: 0px;
+}
+#cabecalho h2{
+  font-family: 'Titillium Web', sans-serif;
+  color: #888888;
+  font-size: 15pt;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+/*Formatação de imagens com legenda*/
+
+figure.foto-legenda{
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 1px 1px 4px black;
+}
+.foto-legenda img{
+  width: 100%;
+  height: 100%;
+}
+.foto-legenda figcaption{
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+figure.foto-legenda:hover figcaption{
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+
+/*formatção do menu*/
+#menu{
+  display: block;
+}
+#menu ul{
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top:-20px;
+  left:500px;
+}
+#menu li{
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px;
+  margin: 2px;
+  transition: background-color 1s;
+}
+#menu li:hover{
+  background-color: #606060;
+}
+#menu h1{
+  display: none;
+}
+#menu a {
+  color: #000;
+  text-decoration: none;
+}
+nav#menu a:hover{
+  color: #fff;
+}
+
+#corpo{
+  display: block;
+  width: 520px;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 15px;
+}
+
+#tabelaspec{
+  border: 1px solid #606060;
+  border-spacing: 0px; /*sem isso fica um espacinho entre as celulas td*/
+  margin-left: auto;
+  margin-right: auto;
+}
+#tabelaspec caption{
+  color: #888888;
+  font-size: 12pt;
+  font-weight: bold;
+}
+#tabelaspec caption span{
+  display: block;
+  float: right;
+  color: #000;
+  font-size: 8pt;
+  margin-top: 10px;
+}
+#tabelaspec td{
+  border: 1px solid #888888;
+  padding: 10px;
+  text-align: center;
+}
+.colEsq{
+  color: #fff;
+  background-color: #606060 ;
+  vertical-align: top;
+  font-weight: bold;
+}
+.colDir{
+  background-color: #cecece
+}
+
+
+#lateral{
+  display: block;
+  width: 350px;
+  float: right;
+}
+#rodape{
+  clear: both;
+  border-top: 1px solid #606060;
+}
+#rodape p{
+  text-align: center;
+}
