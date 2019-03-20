@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+#conteudo{
+    width: 1000px;
+    margin: auto;
+}
+
+
+#frame-spec{
+    width: 400px;
+    height: 280px;
+    border: none;
+    overflow: hidden;
+}
+
+#frame-spec::-webkit-scrollbar-track{
+    display: none;
+}
+
