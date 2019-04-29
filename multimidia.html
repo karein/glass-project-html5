@@ -1,25 +1,67 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+    <head>
+       <meta charset="utf-8"/>
+       <title>tudo sobre google glass</title>
+       <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+       <link rel="stylesheet" type="text/css" href="_css/media.css"/>
+    </head>
 
-[AQUI ENTRA UMA FOTO]
+    <script type="text/javascript" src="_javascript/funcoes.js"></script>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+    <body>
+        <div id="interface">
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
 
+                <img id="iconeOculos" src="_imagens/multimidia.png" alt=""/>
 
-Áudio e Vídeo
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                      <ul type="disc">
+                          <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+                          <li onmousemove="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+                          <li onmousemove="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+                          <li onmousemove="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')">Multimídia</li>
+                          <li onmousemove="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                      </ul>
+                </nav>
+            </header>
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
+            <section id="corpo-full">
+                <article id="noticia-pincipal">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                             <h3>Glass > Multimídia</h3>
+                             <h1>Sons e Vídeos</h1>
+                             <h2>por Gustavo Guanabara</h2>
+                             <h3 class="direita">Atualizado em 01/Maio/2013</h3>
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+                        </hgroup>
+                    </header>
+
+                    <div id="tv-radio">
+                        <audio id="musica" src="_media/Kill This Love M V.mp3" type="audio/mpeg" controls="controls">
+                            Nao foi possivel carregar o video
+                        </audio>
+                        <video id="video" poster="_imagens/video-mini03.jpg" src="_media/[EXID(이엑스아이디)] 알러뷰 (I LOVE YOU) M_V (Official Music Video).mp4" type="video/mp4" controls="controls">
+                            Nao foi posivel carregar o audio
+                        </video>
+                    </div>
+
+               </article>
+            </section>
+
+            <footer id="rodape">
+                <p>Copyright 2013 - by Gustavo Guanabara <br>
+                <a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/?lang=pt-br" target="_blank">Twitter</a></p>
+            </footer>
+        </div>
+
+    </body>
+</html>
